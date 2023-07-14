@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(43, 47, 82);
+    color: aliceblue;
+}
+h3{
+    color: rgb(241, 229, 52);
+}
+h2{
+    color: black;
+    border: 2px;
+    border-style: solid;
+    background-color: goldenrod;
+}
+.astronomia{
+    color: red;
+}

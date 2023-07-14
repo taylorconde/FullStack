@@ -1,0 +1,38 @@
+li{
+    color: maroon;
+    text-justify: auto;
+}
+body{
+    background-color: rgb(46, 3, 3);
+}
+h1{
+    color: blanchedalmond;
+}
+h4{
+    color: burlywood;
+}
+aside{
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: right;
+    clear: right;
+    font-style: italic;
+    background-color: chocolate;
+}
+.imagem_moon{
+    float: right;  
+}
+.aside_list{
+
+    width: 12%;
+    padding-right: 35px;
+    margin-right: 15px;
+    float: left;
+
+    background-color: chocolate;
+}
+.alinhamento_center{
+    text-align: center;
+}
