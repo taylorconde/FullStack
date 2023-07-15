@@ -10,7 +10,18 @@ h2{
     border: 2px;
     border-style: solid;
     background-color: goldenrod;
+    font-family: 'Sofia', cursive;
+   
+}
+li{
+    font-family: 'Poppins', sans-serif;
 }
 .astronomia{
     color: #e74c3c;
 }
+title{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+}
+
+
