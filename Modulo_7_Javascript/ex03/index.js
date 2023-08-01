@@ -24,21 +24,26 @@ Utilize o switch para verificar a opção escolida pelo usuário
 Armazenar o nome da unidade
 Armazenar o valor convertido de anos-luz para a unidade desejada*/
 
+let conversao
+let converted
+let unidade
+
+
 switch(convertOption) {
     case "1":
-        var conversao = "Parsec(pc)"
-        var converted = (+distance * anoParsec)
-        var unidade = "pc"
+        conversao = "Parsec(pc)"
+        converted = (+distance * anoParsec)
+        unidade = "pc"
         break
     case "2":
-        var conversao = "Unidade Astronômica(AU)"
-        var converted = (+distance * anoUa)
-        var unidade = "AU"
+        conversao = "Unidade Astronômica(AU)"
+        converted = (+distance * anoUa)
+        unidade = "AU"
         break
     case "3":
-        var conversao = "Quilômetros(Km)"
-        var converted = (+distance * anoLuz)
-        var unidade = "Km"
+        conversao = "Quilômetros(Km)"
+        converted = (+distance * anoLuz)
+        unidade = "Km"
         break
     default:
         alert(`Distancia em anos-luz: ${distance}\nUnidade não identificada: Conversão fora do escopo `)
