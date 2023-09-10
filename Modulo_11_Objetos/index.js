@@ -41,8 +41,6 @@ spaceship.functions = [
     }},
 ];
 
-
-
 let choice;
 
 do {
