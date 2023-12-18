@@ -13,6 +13,7 @@ function submitHouse() {
     removeButton.textContent = 'Remover';
     removeButton.setAttribute("onclick", "removeHouse(this)");
     //adding button to li and li to ul
+    
     newHouse.appendChild(removeButton);
     list.appendChild(newHouse);
 }
