@@ -1,3 +1,3 @@
 # FullStack
 
-# Module 13 DOM
+# Module 16 Evolução e Compatibilidade - JavaScript Moderno * ES6+
