@@ -9,10 +9,60 @@
 
 <body>
     <h1>Search on Google</h1>
-    <form action="https://www.google.com/search" method="get">
-        <input type="text" name="query" id="query" placeholder="Search on Google">
+    <form action="https://www.google.com/search" method="get" autocomplete="">
+        <input type="text" name="query" id="query" placeholder="Search on Google" required>
         <label for="query">|</label>
-        <input type="submit" value="Search">
+        <input type="submit" value="Search"><br>
+        <br>
+        <a href="mailto:taylorconde@gmail.com" title="email to taylorconde@gmail.com"><strong>EMAIL</strong></a><br>
+        <br>
+        <button onclick="document.location='../guia-de-galaxias/andromeda.html'">Andromeda</button>
+    </form>
+    <form>
+        <input type="radio" name="languages" id="JS" value="JavaScript">
+        <label for="JS">JavaScript</label><br>
+        <input type="radio" name="languages" id="Python" value="Python">
+        <label for="JS">Python</label><br>
+    </form>
+    <form>
+        <input type="checkbox" name="english" id="english" value="english">
+        <label for="english">English</label><br>
+        <input type="checkbox" name="lvl1" id="lvl1" value="Beginner">
+        <label for="lvl1">Beginner</label><br>
+        <input type="checkbox" name="lvl2" id="lvl2" value="Intermediate">
+        <label for="lvl2">Intermediate</label><br>
+        <input type="checkbox" name="lvl3" id="lvl3" value="Advanced">
+        <label for="lvl3">Advanced</label><br>
+    </form>
+    <form>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+    </form>
+    <form action="">
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" id="birthday" min="1900-01-01" max="2020-12-31">
+    </form>
+    <form>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+    </form>
+    <form action="">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" size="30" required>
+    </form>
+    <form action="">
+        <input type="number" name="value" id="value" min="0" max="100" step="5">
+    </form>
+    <form action="">
+        <input type="text" name="list" id="list" list="browsers">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit" value="Submit">
     </form>
 </body>
 
