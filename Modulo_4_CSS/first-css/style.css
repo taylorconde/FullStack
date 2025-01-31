@@ -1,0 +1,57 @@
+#main-header {
+    background-color: #4211df;
+    padding: 20px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    padding: 0%;
+    list-style: none;
+}
+
+.nav-item {
+    display: inline;
+    padding: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+}
+
+h1+h2 {
+    color: #791010;
+}
+
+h1:hover {
+    color: #791010;
+    background-attachment: fixed;
+    background-color: #4211df;
+}
+
+/* .fino {
+    display: inline;
+    background-color: rgb(255, 115, 0);
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+    font-size: 2vw;
+}
+
+.bloco {
+    /* display: block; */
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: lightblue;
+}
