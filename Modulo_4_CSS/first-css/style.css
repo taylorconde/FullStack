@@ -55,3 +55,47 @@ h1:hover {
     padding: 10px;
     background-color: lightblue;
 }
+
+a[href="index.html"] {
+    filter: brightness(110%);
+    color: #791010;
+}
+
+.turnos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #791010;
+}
+
+.turnos h1 {
+
+    background-image: none;
+    /* No background image initially */
+    background-size: contain;
+    /* Make sure the image covers the whole element */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    height: 100px;
+    /* Set a height for the <h1> so the background image is visible */
+    text-align: center;
+    line-height: 100px;
+    /* Vertically center the text */
+    transition: background-image 0.3s ease;
+}
+
+.turnos h1:hover {
+    background-image: url('https://www.w3schools.com/cssref/paper.gif');
+    /* Set the background image on hover */
+}
+
+.turnos li {
+    display: inline;
+    padding: 10px;
+    background-color: #4211df;
+    color: #ffffff;
+}
+
+.turnos li:hover {
+    background-color: #791010;
+}

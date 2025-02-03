@@ -1,0 +1,27 @@
+body {
+    background-color: #303b52;
+}
+
+h1 {
+    color: #fff;
+}
+
+h3 {
+    color: #f0ca00;
+    margin-left: 10px;
+}
+
+li {
+    color: #fff;
+}
+
+div.container h2 {
+    color: #000;
+    background-color: #f0ca00;
+    border: #000 solid 2px;
+    margin-left: 10px;
+}
+
+.astronomia {
+    color: #ff1111
+}
