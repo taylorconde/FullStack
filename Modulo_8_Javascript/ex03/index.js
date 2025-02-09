@@ -1,14 +1,15 @@
-//spaceship name
-let spaceshipName = prompt("Informe o nome da sua nave: ");
+let spaceshipName = prompt("informe o nome da nave:");
 
-let spaceshipNameReverse = "";
-// reverse spaceship's name with a loop
+let caracterProibido = prompt("parar em que letra?");
 
-for(let i = spaceshipName.length -1; i >= 0; i --) {
-    if(spaceshipName[i] == "e") {
+let newSpaceshipName = "";
+
+for (let i = spaceshipName.length - 1; i > 0; i--) {
+
+    if (spaceshipName[i] === caracterProibido) {
         break;
+    } else {
+        newSpaceshipName += spaceshipName[i];
     }
-    spaceshipNameReverse += spaceshipName[i];
-}
-
-alert(`Nome original da nave: ${spaceshipName}\nNome apos ocultação: ${spaceshipNameReverse}`);
+};
+console.log(newSpaceshipName);
