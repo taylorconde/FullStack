@@ -1,43 +1,81 @@
-// spaceship name
-let spaceshipName = prompt("Informe o nome da nave: ");
+/*
+Nome da Nave
+Velocidade = 0
+Função Menu
+    1-Acelerar 5km/s
+    2-Desacelerar 5km/s
+    3-Imprimir Dados de Bordo
+    4-Sair do Programa
+Função Acelerar
+Função Desacelerar
+Função Dados de bordo
+    Nome da Nave e Velocidade Atual
+*/
+//Nome da nave
+let spaceshipName = prompt("Olá, informe o nome da Nave: ");
 
+//velocidade Inicial zero
+let velocity = 0;
 
-// initial speed 0  / menu : 1 Acelerar 5mk/s , 2 Desacelerar 5km/s nao deve passar de zero, 3 print (nome, velocidade atual), 4 exit program
-// se a opcao selecionada nao estiver no menu, entao o menu deve ser oferto novamente.
+//função Menu inicial
+function menu() {
 
-let spaceshipSpeed = 0;
-
-let option = "";
-
-let exit = false;
-
-
-function nave() {
-
+    let option;
+    let optionNumbers = ["1", "2", "3", "4"];
 
     do {
-        option = prompt("1.Acelerar 5km/s\n2.Desacelerar 5km/s\n3.Informar Dados da Nave\n4.Exit");
-        switch (option) {
-            case "1":
-                spaceshipSpeed += 5;
-                break;
-            case "2":
-                if (spaceshipSpeed > 0) {
-                    spaceshipSpeed -= 5;
-                } else {
-                    alert("Sua nave ja esta parada");
-                }
-                break;
-            case "3":
-                alert(`Nome da nave: ${spaceshipName}\nVelocidade da nave: ${spaceshipSpeed}`);
-                break;
-            case "4":
-                exit = true;
-                break;
-            default:
-                alert("Opção não reconhecida");
-        }
+        option = prompt("Selecione o número de uma das opções, piloto:\n" +
+            "1- Acelerar 5km/s\n" +
+            "2- Desacelerar 5km/s\n" +
+            "3- Imprimir Dados de Bordo\n" +
+            "4- Sair do Programa"
+        );
+    } while (!optionNumbers.includes(option));
+
+    return option;
+
+};
+
+function controlMenu(answer) {
+
+    if (answer === "1") {
+        speedUp();
+    } else if (answer === "2") {
+        slowDown();
+    } else if (answer === "3") {
+        spaceshipData(spaceshipName, velocity);
+    } else {
+        alert('Encerrando o programa.')
+        return;
     }
-    while (!exit);
 }
-nave()
+
+function speedUp() {
+    velocity += 5;
+    console.log(velocity);
+};
+
+function slowDown() {
+    if (velocity > 0) {
+        velocity -= 5;
+        console.log(velocity);
+    } else {
+        alert(`Estamos parados, primeiro acelere a nave.\nVelocidade atual: ${velocity}km/s.`);
+    };
+};
+
+function spaceshipData(spaceshipName, velocity) {
+    alert(`Nome da nave: ${spaceshipName}.\n` +
+        `Velocidade atual: ${velocity}km/s.`
+    );
+};
+
+let answer;
+let controls;
+
+do {
+
+    answer = menu();
+    controls = controlMenu(answer);
+
+} while (answer !== "4");
