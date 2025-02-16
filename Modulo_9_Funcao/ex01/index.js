@@ -50,10 +50,7 @@ function controlMenu(answer) {
     }
 }
 
-function speedUp() {
-    velocity += 5;
-    console.log(velocity);
-};
+const speedUp = () => velocity += 5;
 
 function slowDown() {
     if (velocity > 0) {
@@ -64,7 +61,7 @@ function slowDown() {
     };
 };
 
-function spaceshipData(spaceshipName, velocity) {
+const spaceshipData = (spaceshipName, velocity) => {
     alert(`Nome da nave: ${spaceshipName}.\n` +
         `Velocidade atual: ${velocity}km/s.`
     );
