@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="utils.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>CORRETORA SEMPRE TEM</h1>
+    <form name="houses-form" id="houses-form" onsubmit="registerHouse()">
+        <p>
+            <!-- type - house or apartment  -->
+            <label for="house-type">Tipo de Imóvel:</label><br>
+            <select name="house-type" id="house-type">
+                <option value="house">Casa</option>
+                <option value="apartment">Apartamento</option>
+            </select>
+        </p>
+
+        <p>
+            <!-- area in meters -->
+            <label for="area">Área do Imóvel:</label><br>
+            <input type="text" id="area" name="area" placeholder="40 - 1000"> m²
+        </p>
+
+        <p>
+            <!-- rented? -->
+            <label>Alugada?</label><br>
+            <input type="radio" id="rented" name="availability" value="rented">
+            <label for="rented">Alugada</label>
+            <input type="radio" id="available" name="availability" value="available">
+            <label for="available">Disponível</label>
+        </p>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <hr>
+    <!-- list of all properties -->
+    <h2>Lista de Imóveis e Disponibilidade:</h2>
+    <div id="house-list">
+
+    </div>
+</body>
+
+</html>

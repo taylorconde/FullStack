@@ -1,0 +1,9 @@
+.property-available {
+    background-color: green;
+    color: white;
+}
+
+.property-not-available {
+    background-color: red;
+    color: white;
+}
