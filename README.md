@@ -12,4 +12,4 @@
 # Module 11 Objetos Javascript
 # Module 12 Classes POO Javascript
 # Module 13 Manipulando o DOM Javascript
-# Module 14 Git e GitHub
+# Module 16 Javascript Moderno * ES6
