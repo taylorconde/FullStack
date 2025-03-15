@@ -17,12 +17,12 @@ let planetsAuKm = [];
 planetsAu.forEach((planetObj) => {
     const [planetName, UnidadeAstronomica] = Object.entries(planetObj)[0];
     const distanceInKm = unidadeAstroToQuilometro(UnidadeAstronomica).toFixed(2);
-    planetsAuKm.push(new Planet(planetName, distanceInKm));
+    planetsAuKm.push((new Planet(planetName, distanceInKm, UnidadeAstronomica)));
 });
 
 const listParagraph = document.getElementById("list");
 
 planetsAuKm.forEach((planet) => {
-    listParagraph.append(` - Planeta: ${planet.name} - Distancia do sol em km: ${planet.distance}Km`);
+    listParagraph.append(` - Planeta: ${planet.name} - Distancia Astronomica: ${planet.au} - Distancia do sol em km: ${planet.distance}Km`);
     listParagraph.append(document.createElement("br"));
 })
