@@ -6,4 +6,4 @@ class Planet {
     }
 };
 
-module.exports = { Planet };
+export { Planet };

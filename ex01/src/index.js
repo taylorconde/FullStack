@@ -1,5 +1,5 @@
-const { Planet } = require('./planet');
-const { unidadeAstroToQuilometro } = require('./calcule');
+import { Planet } from './planet';
+import auToKm from './calcule';
 
 const planetsAu = [
     { "Mercúrio": 0.39 },
@@ -16,7 +16,7 @@ let planetsAuKm = [];
 
 planetsAu.forEach((planetObj) => {
     const [planetName, UnidadeAstronomica] = Object.entries(planetObj)[0];
-    const distanceInKm = unidadeAstroToQuilometro(UnidadeAstronomica).toFixed(2);
+    const distanceInKm = auToKm(UnidadeAstronomica).toFixed(2);
     planetsAuKm.push((new Planet(planetName, distanceInKm, UnidadeAstronomica)));
 });
 
