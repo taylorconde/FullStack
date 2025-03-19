@@ -1,5 +1,7 @@
 import Spaceship from "./spaceship"
 import { SpacechipEngine } from "./engine"
+import "core-js"
+import "regenerator-runtime"
 
 /*
 Sophia: 10Gj e carga de 5Gj

@@ -1,4 +1,6 @@
 import Spaceship from "./spaceship";
+import "core-js"
+import "regenerator-runtime"
 
 export class SpacechipEngine {
     constructor(spaceship) {
