@@ -1,4 +1,4 @@
-export default class {
+export default class Neo {
     constructor(id, name, averageEstimatedDiameter, isSentry) {
         this.id = id;
         this.name = name;
